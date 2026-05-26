@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Choudhary | AI & Full-Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --bg: #121212;
+      --card: #1e1e1e;
+      --text: #e0e0e0;
+      --accent: #00bcd4;
+      --highlight: #ff4081;
+    }
+
+    body.theme-midnight {
+      --bg: #0a0f1c;
+      --card: #111827;
+      --text: #d1d5db;
+      --accent: #00ff9f;
+      --highlight: #00bcd4;
+    }
+
+    body.theme-cyberpunk {
+      --bg: #000000;
+      --card: #0d0d0d;
+      --text: #f0f0f0;
+      --accent: #ff00ff;
+      --highlight: #00ffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--card);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: var(--highlight);
+    }
+
+    nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--accent);
+      color: #000;
+    }
+
+    .theme-switcher {
+      margin-top: 15px;
+    }
+
+    .theme-switcher select {
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: none;
+      background-color: var(--card);
+      color: var(--text);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    .skills li,
+    .projects .card,
+    .stack .card,
+    .current .card {
+      background: var(--card);
+      padding: 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .projects .card,
+    .stack .card,
+    .current .card {
+      margin-bottom: 25px;
+    }
+
+    .projects .card h3,
+    .stack .card h3,
+    .current .card h3 {
+      margin-top: 0;
+      color: var(--highlight);
+    }
+
+    .resume a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: var(--highlight);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: var(--accent);
+    }
+
+    .contact-info a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--card);
+      font-size: 14px;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      section {
+        margin: 30px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Yash Choudhary</h1>
+    <p>AI Developer | Full-Stack Engineer | System Optimizer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#stack">Tech Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#current">Now Building</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="theme-switcher">
+      <label for="theme">Theme:</label>
+      <select id="theme" onchange="switchTheme(this.value)">
+        <option value="default">Default Dark</option>
+        <option value="midnight">Midnight</option>
+        <option value="cyberpunk">Cyberpunk</option>
+      </select>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Yash Choudhary, a Computer Science Engineering student at ABES Engineering College, specializing in AI & ML. I build privacy-respecting, RAM-efficient tools—from resume analyzers to voice assistants. I thrive on modular architecture, low-level optimization, and crafting delightful user experiences.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Python, JavaScript, C++, HTML/CSS</li>
+      <li>Frameworks: Flask, Node.js, Express, React</li>
+      <li>AI Tools: OpenAI API, Silero, Ollama, quantized models</li>
+      <li>DevOps: Docker, GitHub Actions, AWS EC2/S3</li>
+      <li>UX Tools: Figma, Postman, VS Code</li>
+    </ul>
+  </section>
+
+  <section id="stack" class="stack">
+    <h2>Tech Stack Overview</h2>
+    <div class="card">
+      <h3>Frontend</h3>
+      <p> HTML5, CSS3, Bootstrap, responsive design principles</p>
+    </div>
+    <div class="card">
+      <h3>Backend</h3>
+      <p>Node.js, Flask</p>
+    </div>
+    <div class="card">
+      <h3>AI & ML</h3>
+      <p>LLMs via OpenAI, quantized models via Ollama, voice models via Silero</p>
+    </div>
+    <div class="card">
+      <h3>DevOps & Infra</h3>
+      <p>Docker containers, GitHub Actions CI/CD, AWS EC2/S3, system PATH tuning</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Virtual Resume Builder</h3>
+      <p>Full-stack tool that analyzes resumes using LLMs and matches them to job descriptions. Built with Flask, Bootstrap, and OpenAI API.</p>
+      <p><strong>Architecture:</strong> Flask backend → OpenAI API → Bootstrap frontend → PDF parser</p>
+    </div>
+    <div class="card">
+      <h3>Virtual Mouse Using Hand Gestures</h3>
+      <p>Python-based gesture recognition system using OpenCV and MediaPipe to control mouse actions.</p>
+      <p><strong>Architecture:</strong> Webcam feed → Hand landmark detection → Gesture mapping → OS-level mouse control</p>
+    </div>
+  </section>
+
+  <section id="current" class="current">
+    <h2>Now Building</h2>
+    <div class="card">
+      <h3>Voice + Vision AI Models</h3>
+      <p>Exploring multimodal AI—combining voice recognition with visual perception to build next-gen assistants that can listen, see, and act. Goal: lightweight, RAM-efficient, privacy-respecting models that run locally without cloud dependency.</p>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <a href="resume.pdf" target="_blank">Download My Resume (PDF)</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="contact-info">
+      <li><i class="fas fa-envelope"></i> yash.choudhary574@gmail.com</li>
+      <li><i class="fas fa-phone"></i> 9540729856</li>
+      <li><i class="fab fa-github"></i> <a href="https://github.com/choudharyyash001" target="_blank">choudharyyash001</a></li>
+      <li><i class="fas fa-code"></i> <a href="https://www.codechef.com/users/ch_yash001" target="_blank">ch_yash001</a></li>
+      <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/choudharyyash001" target="_blank">choudharyyash001</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Yash Choudhary. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function switchTheme(theme) {
+      document.body.className = '';
+      if (theme === 'midnight') {
+        document.body.classList.add('theme-midnight');
+      } else if (theme === 'cyberpunk') {
+        document.body.classList.add('theme-cyberpunk');
+      }
+    }
+  </script>
+</body>
+</html>

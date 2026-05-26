@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Submission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary-color: #0056b3;
+      --accent-color: #007bff;
+      --bg-color: #f8f9fa;
+      --text-color: #333;
+      --border-radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .form-card {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .form-card h2 {
+      margin-bottom: 25px;
+      text-align: center;
+      color: var(--primary-color);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: var(--border-radius);
+      font-size: 14px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--accent-color);
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: var(--border-radius);
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--accent-color);
+    }
+
+    .note {
+      font-size: 13px;
+      color: #666;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .form-card {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-card">
+    <h2>Resume Submission</h2>
+    <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="FULL NAME" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="xyz@example.com" required>
+
+      <label for="resume">Upload Resume (PDF only)</label>
+      <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+      <label for="message">Cover Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write a brief introduction or motivation..." required></textarea>
+
+      <button type="submit">Submit Application</button>
+      <p class="note">Your resume will be reviewed within 3–5 business days.</p>
+    </form>
+  </div>
+</body>
+</html>
