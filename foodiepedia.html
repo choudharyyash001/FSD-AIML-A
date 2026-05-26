@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodiepedia</title>
+    <style>
+      
+      .home
+      {
+        float: right;
+        margin-top:15vh ;
+        margin-right: 5vh;
+        text-decoration: none;
+      }
+
+      .home nav a{
+        text-decoration: none;
+      }
+
+      .logo-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 20px; /* Optional: Add some padding for better spacing */
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and title */
+}
+
+.logo_title {
+
+    font-size: 30px;
+    color: aliceblue;
+}
+
+
+        .ques_p {
+            padding-left: 90px;
+            padding-right: 90px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 20px;
+            margin-left: -20%;
+            margin-right: -20%;
+        }
+
+        .faq {
+            background-color: rgb(237, 234, 231);
+            font-family: Arial, sans-serif;
+            padding-left: 300px;
+            padding-right: 300px;
+            
+            border-radius: 0;
+            width: 500px;
+            margin:auto;
+        }
+
+
+        .container {
+            
+            padding: 0vh;
+            background-color: rgb(246, 245, 242); 
+            border-radius: 0;
+            justify-content: space-between;
+        }
+
+       
+
+
+       
+        .chart {
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .bar {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 200px;
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        .bar div {
+            width: 18%;
+            background-color: #4CAF50;
+            text-align: center;
+            margin-right: 2%;
+            transition: height 0.3s;
+        }
+        .bar div:hover {
+            background-color: #45a049;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+
+        
+        ul {
+            list-style-type: disc;
+            margin: 20px;
+            padding-left: 40px;
+        }
+
+
+        .imagecontainer{
+            justify-content: center;
+            
+            display: flex;
+            align-items: center;
+        }
+
+        .imagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagecontainer table {
+    border-collapse: collapse; /* Removes default spacing between table cells */
+}
+
+.imagecontainer td {
+    padding: 6vmin; /* Adds space between the images */
+    text-align: center;
+}
+
+.imagecontainer img {
+    width: 30vmin; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.readMOre{
+    margin-top: -28vh;
+    margin-left: 85vh;
+   
+    position: absolute;
+    
+}
+
+
+        
+ 
+
+        
+
+        
+ 
+
+    </style>
+</head>
+<body>
+
+    <div style="background-color:#00090f; margin-top: -20px;">
+        <div class="home">
+            <nav>
+                <a href="#home" style="color: aliceblue;">HOME</a>
+                <a href="#about" style="color: aliceblue;">ABOUT</a>
+                <a href="https://www.google.com/search?sca_esv=a22d93479fb8aa44&rlz=1C1ONGR_enIN1035IN1035&sxsrf=ADLYWILuRUpjmkMrEjtMUhCQ_yUMVDFZXw:1735812013476&q=food+news&tbm=nws&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWtG_mNb-HwafvV8cKK_h1a0WYAF4mXQP8CuyQXqW6TNzGDF6udhNIrEaziXWul_CUIC0uoisLgLF5BmLdprgvMRtKmM2ALRPDu08iWoCw_1on_VEx1AVNJv_OnfD1oAVlvBfCB2Jl_GuMqq6YuFOgVPqPuWkyUJZu3XlasbYgKO6SN9d2-U1HO6arOPfJ6OSxZ0bVQw&sa=X&sqi=2&ved=2ahUKEwir1NbT49aKAxXbcGwGHU7uG54Q0pQJegQIHhAB&biw=1536&bih=695&dpr=1.25" style="color: aliceblue;">NEWS</a>
+                <form action="https://www.google.com/search" method="get" target="_blank" style="display: inline;">
+                    <input type="text" name="q" placeholder="Search.." style="padding: 0.5vh;">
+                    
+                </form>
+            </nav>
+            
+        </div>
+        <div class="logo-container">
+            <img class="logo" src="food_logo.jpg" alt="Logo">
+            <p class="logo_title" style="color: aliceblue;">FOODIEpedia</p>
+        </div>
+    </div>
+    
+    
+
+    <div class="container" >
+        <section id="home">
+            
+               <div style="position: relative;"> 
+                <img src="mainhomenew.jpg" width="100%" height="auto" alt="">
+                <div class="readMOre"><a style="text-decoration: solid; color: rgb(255, 255, 255);text-decoration: none;padding: 3vh 13vh 3vh 13vh;" href="https://en.wikipedia.org/wiki/Food" >READ MOre</a></div>
+               </div>
+            <p>
+                Fast food has become an integral part of modern life, appealing to our fast-paced lifestyles with its promise of quick, convenient, and tasty meals.
+            </p>
+
+
+                <div class="imagecontainer">
+            <table >
+                <tr style="background-color: rgb(221, 214, 214);">
+                        
+                        <td> 
+                            <img width="200vmin" src="icecream cone.jpeg" alt="">
+                                     <p>HAvmor</p>
+                        </td>
+                        <td> 
+                            <img width="200vmin" src="icecream cone0.jpeg" alt="">
+                                     <p>Amul</p>
+                        </td>
+                        <td> 
+                            <img width="200vmin" src="icecream cone2.jpeg" alt="">
+                                     <p>balaji</p>
+                        </td>
+                        <td> 
+                            <img width="200vmin" src="icecream cone1.jpeg" alt="">
+                                     <p>MCD</p>
+                        </td>
+                       
+                       
+                      
+                        </tr>
+                        <tr> <th colspan="4" style="text-align: right;background-color:rgb(221, 214, 214)"><a style="text-decoration: none;color:black;" href="wikipedia.html">SEE MORE</a></th></tr>
+                
+                
+                
+            </table>
+               </div>
+
+            <details>
+                <summary>Select the food</summary>
+                <ol>
+                    <li><a href="wikipedia.html">ice-cream</a></li>
+                   
+    <li>Pizza</li>
+    <li>Burger</li>
+    <li>Ice-Cream</li>
+    <li>Cold-Drink</li>
+    <li>Sandwich</li>
+    <li>French Fries</li>
+    <li>Sushi</li>
+    <li>Taco</li>
+    <li>Pasta</li>
+    <li>Salad</li>
+    <li>Hot Dog</li>
+    <li>Fried Chicken</li>
+    <li>Steak</li>
+    <li>Noodles</li>
+    <li>Donuts</li>
+    <li>Chocolate Cake</li>
+    <li>Chicken Wings</li>
+    <li>Ramen</li>
+    <li>Spring Rolls</li>
+    <li>BBQ Ribs</li>
+    <li>Falafel</li>
+    <li>Hummus</li>
+    <li>Guacamole</li>
+    <li>Mashed Potatoes</li>
+    <li>Baked Beans</li>
+    <li>Grilled Cheese</li>
+    <li>Macaroni and Cheese</li>
+    <li>Burrito</li>
+    <li>Quesadilla</li>
+    <li>Curry</li>
+    <li>Paella</li>
+    <li>Clam Chowder</li>
+    <li>Gumbo</li>
+    <li>Chili</li>
+    <li>Waffles</li>
+    <li>Pancakes</li>
+    <li>Crepes</li>
+    <li>Muffins</li>
+    <li>Bagel</li>
+    <li>Cheesecake</li>
+    <li>Lasagna</li>
+    <li>Spaghetti</li>
+    <li>Meatballs</li>
+    <li>Risotto</li>
+    <li>Fajitas</li>
+    <li>Empanadas</li>
+    <li>Gazpacho</li>
+    <li>Tabbouleh</li>
+    <li>Bruschetta</li>
+    <li>Quiche</li>
+
+
+                </ol>
+            </details>
+        </section>
+    </div>
+    <section id="about">
+        <div class="faq">
+            <h2 style="text-align: center;"><img class="centered-img-mobile alignnone wp-image-200035 size-full lazyloaded" style="margin-right: 37px" src="https://resumebuild.com/wp-content/uploads/2024/05/faq.webp" alt="FAQ" width="75" height="75">Have Questions?</h2>
+            <div class="ques_p">
+                <details>
+                    <summary>Fast-Food?</summary>
+                    
+    <ol>
+        <li>
+            <strong>Definition:</strong>
+            <p>Fast food is a type of mass-produced food designed for quick service and consumption.</p>
+        </li>
+        <li>
+            <strong>Key Characteristics:</strong>
+            <ul>
+                <li>Quick Service: Prepared and served rapidly.</li>
+                <li>Pre-prepared Ingredients: Uses pre-cooked or pre-prepared ingredients.</li>
+                <li>Packaging: Typically packaged in disposable containers.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Common Fast Food Items:</strong>
+            <ul>
+                <li>Burgers and Fries</li>
+                <li>Pizza</li>
+                <li>Fried Chicken</li>
+                <li>Tacos and Burritos</li>
+                <li>Sandwiches and Subs</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Benefits:</strong>
+            <ul>
+                <li>Convenience: Ideal for busy individuals.</li>
+                <li>Affordability: Generally less expensive than sit-down restaurants.</li>
+                <li>Consistency: Offers consistent taste and quality.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Health Considerations:</strong>
+            <ul>
+                <li>Nutritional Content: Often high in calories, fats, sugars, and sodium.</li>
+                <li>Healthier Options: Many chains now offer healthier alternatives.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Environmental Impact:</strong>
+            <ul>
+                <li>Packaging Waste: Contributes to environmental pollution.</li>
+                <li>Sustainability Initiatives: Some chains adopt sustainable practices.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Cultural Impact:</strong>
+            <ul>
+                <li>Global Influence: Influences eating habits worldwide.</li>
+                <li>Adaptation: Many chains adapt their menus to local tastes.</li>
+            </ul>
+        </li>
+    </ol>
+
+                </details>
+            </div> <br>
+            <div class="ques_p">
+                <details>
+                    <summary>Why is Fast-Food?</summary>
+                    
+    <ul>
+        <li>
+            Convenience:
+            <ol>
+                <li><strong>Quick Service:</strong> Fast food is designed to be prepared and served quickly, catering to people who are on the go or do not have time to cook.</li>
+                <li><strong>Easily Accessible:</strong> Fast food restaurants are often located in convenient places such as highways, urban centers, and near workplaces, making them easy to access.</li>
+            </ol>
+        </li>
+        <li>
+            Affordability:
+            <ol>
+                <li><strong>Cost-Effective:</strong> Many fast food options are relatively inexpensive compared to sit-down restaurants, making them an affordable choice for many people.</li>
+                <li><strong>Value Meals:</strong> Fast food chains often offer combo meals and value deals, providing more food for less money.</li>
+            </ol>
+        </li>
+        <li>
+            Taste:
+            <ol>
+                <li><strong>Flavorful:</strong> Fast food is often engineered to be very palatable, with high levels of salt, sugar, and fats that can be highly appealing to our taste buds.</li>
+                <li><strong>Consistent Quality:</strong> Fast food chains maintain consistent taste and quality, which builds a sense of reliability and familiarity.</li>
+            </ol>
+        </li>
+        <li>
+            Variety:
+            <ol>
+                <li><strong>Menu Options:</strong> Fast food restaurants offer a wide variety of choices, catering to different tastes and dietary preferences.</li>
+                <li><strong>Customization:</strong> Many fast food chains allow for customization of orders, making it easy for customers to get exactly what they want.</li>
+            </ol>
+        </li>
+        <li>
+            Marketing:
+            <ol>
+                <li><strong>Advertising:</strong> Fast food chains invest heavily in advertising, creating strong brand recognition and appealing promotions.</li>
+                <li><strong>Target Audience:</strong> Effective marketing campaigns target specific demographics, including families, children, and young adults.</li>
+            </ol>
+        </li>
+        <li>
+            Social Aspect:
+            <ol>
+                <li><strong>Gathering Spot:</strong> Fast food restaurants often serve as social gathering spots where friends and families can meet and eat together.</li>
+                <li><strong>Pop Culture:</strong> Fast food has become ingrained in popular culture and is associated with convenience and modern lifestyles.</li>
+            </ol>
+        </li>
+    </ul>
+    <p>While fast food has these appealing aspects, it's important to note that it often lacks nutritional balance and can be high in calories, fats, sugars, and sodium. Moderation and making informed choices are key to maintaining a healthy diet.</p>
+
+
+              
+                </details>
+            </div> <br>
+            <div class="ques_p">
+                <details>
+                    <summary>How has the fast food industry positively impacted modern lifestyles, economic growth, cultural exchange, innovation, and social interactions?</summary>
+                    <h1>Positive Impacts of the Fast Food Industry</h1>
+                    <h2>Modern Lifestyles</h2>
+                    <ul>
+                        <li>Convenience: Fast food offers quick and easy meal options for busy individuals and families.</li>
+                        <li>Affordability: Fast food is generally cheaper compared to dining at traditional restaurants.</li>
+                        <li>Variety: Fast food chains offer a wide range of menu items catering to diverse tastes.</li>
+                    </ul>
+                    
+                    <h2>Economic Growth</h2>
+                    <ul>
+                        <li>Job Creation: The fast food industry employs millions of people worldwide.</li>
+                        <li>Franchise Opportunities: Fast food chains provide franchise opportunities, contributing to small business growth.</li>
+                        <li>Market Expansion: The global fast food market is projected to grow significantly, contributing to economic development.</li>
+                    </ul>
+                    
+                    <div class="chart">
+                        <h3>Job Creation in Fast Food Industry (in millions)</h3>
+                        <div class="bar">
+                            <div style="height: 50%;">USA</div>
+                            <div style="height: 40%;">China</div>
+                            <div style="height: 35%;">IND</div>
+                            <div style="height: 45%;">Brazil</div>
+                            <div style="height: 30%;">UK</div>
+                        </div>
+                    </div>
+                    
+                    <h2>Cultural Exchange</h2>
+                    <ul>
+                        <li>Global Reach: Fast food chains like McDonald's and KFC have expanded globally, introducing local populations to international cuisines.</li>
+                        <li>Fusion Cuisines: The blending of different culinary traditions has led to innovative and diverse food options.</li>
+                        <li>Cultural Awareness: Exposure to different food cultures promotes understanding and appreciation of global diversity.</li>
+                    </ul>
+                    
+                    <h2>Innovation</h2>
+                    <ul>
+                        <li>Technological Advancements: Fast food chains have adopted technology for efficient service, such as self-service kiosks and mobile ordering.</li>
+                        <li>Healthier Options: Many fast food chains are introducing healthier menu items to cater to changing consumer preferences.</li>
+                        <li>Sustainable Practices: Innovations in packaging and waste management are being implemented to reduce environmental impact.</li>
+                    </ul>
+                    
+                    <h2>Social Interactions</h2>
+                    <ul>
+                        <li>Community Gathering: Fast food restaurants often serve as social hubs where people meet and interact.</li>
+                        <li>Family-Friendly Environment: Many fast food chains offer family-friendly amenities, such as play areas for children.</li>
+                        <li>Event Sponsorships: Fast food chains sponsor community events and sports teams, fostering social cohesion.</li>
+                    </ul>
+                    
+                    <div class="chart">
+                        <h3>Global Market Expansion of Fast Food Chains</h3>
+                        <div class="bar">
+                            <div style="height: 60%;">McD</div>
+                            <div style="height: 55%;">KFC</div>
+                            <div style="height: 40%;">Subway</div>
+                            <div style="height: 45%;">Pizza Hut</div>
+                            <div style="height: 50%;">Starbucks</div>
+                        </div>
+                    </div>
+                </details>
+            </div> <br>
+            <div class="ques_p">
+                <details>
+                    <summary>How?</summary>
+                    <p>.</p>
+                </details>
+            </div> <br>
+            <div class="ques_p">
+                <details>
+                    <summary>Where Can?</summary>
+                    <p>.</p>
+                </details>
+            </div> <br>
+        </div>
+    </section>
+
+    <section id="services">
+        
+       
+    </section>
+
+   
+
+    <div style="background-color: #75afb7;">
+        <footer style="padding-top: 50px;">
+            <strong>© 2024 FOODIEpedia</strong>
+        </footer>
+    </div>
+</body>
+</html>
