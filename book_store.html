@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK STORE WEBSITE
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            background-image: url(bg.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        section nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 0 0 10px rgb(121, 123, 197);
+            background: white;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            border-radius: 30px;
+        }
+
+        section nav li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        section nav a {
+            color: black;
+        }
+
+        section nav a:hover {
+            color: rgb(154, 161, 201);
+        }
+
+        section .main {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            top: 10%;
+        }
+
+        section .main h1 {
+            position: relative;
+            font-size: 55px;
+            top: 80px;
+            left: 25px;
+        }
+
+        section .main h1 span {
+            color: #7f75ca;
+        }
+
+        section .main p {
+            width: 650px;
+            text-align: justify;
+            line-height: 22px;
+            position: relative;
+            top: 125px;
+            left: 25px;
+        }
+
+        section .main .main_tag .main_btn {
+            background: #6772b9;
+            padding: 10px 20px;
+            position: relative;
+            top: 200px;
+            left: 25px;
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        section .main .main_img img {
+            width: 780px;
+            position: relative;
+            top: 100px;
+            left: 20px;
+        }
+
+        /*Books*/
+
+        .featured_boks {
+            width: 100%;
+            height: 100vh;
+            padding: 70px 0;
+        }
+
+        .featured_boks h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            font-size: 45px;
+            
+            box-shadow:0 0 10PX #5581e9;
+        }
+
+        .featured_boks .featured_book_box {
+            width: 95%;
+            height: 60vh;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            
+        }
+
+        .featured_boks .featured_book_box .featured_book_card {
+            width: 200px;
+            height: 420px;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid #3f429c;
+            margin: auto 20px;
+        }
+
+        .featured_boks .featured_book_box .featured_book_card:hover {
+            box-shadow: 0 0 5px #1230aa;
+        }
+
+        .featured_boks .featured_book_box .featured_book_card .featurde_book_img img {
+            width: 150px;
+            height: 200PX;
+        }
+
+        .featured_boks .featured_book_box .featured_book_card .featurde_book_tag h2 {
+            margin: 10px;
+        }
+
+        .featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer {
+            color: #919191;
+        }
+
+        .featured_boks .featured_book_box .featured_book_card .featurde_book_tag .categories {
+            color: #5581e9;
+            margin-top: 8px;
+        }
+
+        .featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price {
+            margin-top: 8px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price sub {
+            font-weight: 100;
+            padding: 0 5px;
+        }
+        .f_btn{
+            border: solid;
+            color: white;
+            background-color: #0033ab;
+            border-radius: 15px;
+            bordeR
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <img width="100px" src="bookstore.jpeg" style="cursor: pointer;margin: 8px 0;">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#featured_boks">Featured</a></li>
+                <li><a href="#featured">New</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="main" id="home">
+
+            <div class="main_tag">
+                <h1>WELCOME TO<br><span>THE STORY SHOP</span></h1>
+
+                <p id="about">
+                    We believe local bookstores are essential community hubs that foster culture, curiosity, and a love
+                    of reading, and we're committed to helping them thrive.
+
+                    Every purchase on the site financially supports independent bookstores. Our platform gives
+                    independent bookstores tools to compete online and financial support to help them maintain their
+                    presence in local communities
+                </p>
+                <details><summary class="main_btn">ABOUT MORE</summary><br><br><br><br>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur dignissimos error, blanditiis cupiditate vel quae, fugiat deserunt aut corporis quis consequatur reiciendis, nesciunt repellendus expedita voluptate dolorem? Suscipit doloribus fuga itaque, adipisci, sequi, ea nesciunt recusandae quos sunt quibusdam dolore officia excepturi! Quo dolore magni quod. Nisi, sequi autem!
+            </p></details>
+            </div>
+
+            <div class="main_img">
+                <img src="about.jpeg">
+            </div>
+
+        </div>
+    </section>
+    <div class="featured_boks">
+
+        <h1 id="featured_boks">Featured Books</h1>
+
+        <div class="featured_book_box">
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book1.jpeg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>HARRY POTTER</h2>
+                    <p class="writer">J K ROLLING</p>
+                    <div class="categories">Thrille,Horror,FICTION</div>
+                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
+                    <a href="https://www.amazon.in/Harry-Potter-ChildrenS-Paperback-Boxed/dp/1408856778/ref=sr_1_2?crid=19XKVFGIC8PR8&dib=eyJ2IjoiMSJ9.eSzvr7PfPStp43yLtyh0KJaiY_Qme6Ds6lau2wlbZLiL1ilGl0m4g1J83knD5PxXqJm8a9S0K7rn3vMNUnZi2rQqPrceVrjqlaZYQiek6pqbMTO1N9jzhtGT_pE-dq74J-GoRrpT5ynE6YWIl8xmfuw2x1KFt73JN7X97BhcDQd5C1OhAcEcjZnOKcv-R169JYXd-WRXAnq8B2SKiHY9-9EyMK0KAhKpzxSRsXH3gtc.AF-qGeeCee7pfvt5zw4pA8Mjjkt4l1TyrP_mzRJrEGY&dib_tag=se&keywords=harry+potter+books+set+1-8&qid=1727242888&sprefix=HARR%2Caps%2C202&sr=8-2
+                    " class="f_btn">BUY NOW</a>
+                </div>
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book2.jpeg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>CALCULATING </h2>
+                    <p class="writer">Mary Robinette Kowal </p>
+                    <div class="categories">Thriller, Horror, Romance</div>
+                    <p class="book_price">$20.50<sub><del>$23.60</del></sub></p>
+                    <a href="https://www.amazon.in/CALCULATING-STARS-Mary-Robinette-Kowal/dp/0765378388/ref=sr_1_1?crid=30K600RKN3QLY&dib=eyJ2IjoiMSJ9.J-woaLIbi7eG1LjO7KPnePaQBeKHZInvrt3uwMCTgRS8bi2dDIU5lPJeosnq4P1s4kK-2PIFXz-9JvaT0i8vdepR5-FnDt7PYrlsWgilyyng2u8lHSpwfeXWKj19xDXrVpegGkR6-8N1oNB8tODnpck5nMy5SgAmYIFuPz_ZKafHh_Bfzpt1ALgJgy1g9atwgjTIdqFaWIhb94XAUjoKHI7Q2vyG6tfhuS2VtvrzY5I.4iVcE6GEUKyWlcX46VyWM-CD1uObjp0NOxCK92Iwb44&dib_tag=se&keywords=THE+CALCULATING+STARS&qid=1727242994&sprefix=the+calculating+stars%2Caps%2C206&sr=8-1
+                    " class="f_btn">BUY NOW</a>
+                </div>
+            </div>
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book3.jpeg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>SOUND</h2>
+                    <p class="writer">ALCHIA DOW</p>
+                    <div class="categories">FICTION, Romance</div>
+                    <p class="book_price">$5.50<sub><del>$9.60</del></sub></p>
+                    <a href="https://www.amazon.in/Sound-Stars-Alechia-Dow/dp/1335911553/ref=sr_1_1?crid=2MA24CS4ZCOMR&dib=eyJ2IjoiMSJ9.cM1yPdt3a1V9JyiJRmV6-4phJV9g4IwiyMnPVsK8QlIPx6pFcXsDVDOsJW6jyHHiZLg7zp-KvLuWF3EJ9vq3bcMuUAAXE7VztoxzsW7xrO6363dqjGukK1uzS5NAoSlJC1eAEAuCKj7lpXqrMLi9II6jh_pDaqlZh1pl98HsFRmL9Mr2esicC9qdW-aXVXQMX3p_sTdhe5X1QrJILQBBVfAX5I5jBuhHn4GOqgjUnr0.diCa-FDM_nYLBjVDnlXDEo_erqWqbj98CXGZHhFufic&dib_tag=se&keywords=THE+SOUND+OF+STARS&qid=1727243767&sprefix=the+sound+of+stars%2Caps%2C208&sr=8-1" class="f_btn">BUY NOW</a>
+                </div>
+
+            </div>
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book4.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>COG</h2>
+                    <p class="writer">GREG VAN HEKOUT</p>
+                    <div class="categories">Thriller, Horror, Romance</div>
+                    <p class="book_price">$9.50<sub><del>$11.60</del></sub></p>
+                    <a href="https://www.amazon.in/Cog-Greg-van-Eekhout/dp/0062686038/ref=sr_1_1?crid=10J5VLUDE9270&dib=eyJ2IjoiMSJ9.Z7ukbu7jQGTCHfPc9HNN4HzPag4lFTn-4ODm4bVWv64KQDvlvHURNiNGV2-YT5ZzxgeMJGFby97m_pbdcOZDJUzY8rSrtNiezhyWzXxDtXayuOWLZYli4wMdc4fEGhkoUiehh_lg_IzJRBgPogD4B4fN0s898zA-4_RI7itBot0nETmHIYjRAVdJ5G8-9Xgf1ObmOopWPgIt6-7MZ_aBrQZdja2XWKWSXiQGBL4rzIg.yYxnR_zY2WEeSg2UzIj2Avk_AV-PQCcM6yyGuyA9C3Y&dib_tag=se&keywords=COG+BOOK&qid=1727244090&sprefix=cog+book%2Caps%2C217&sr=8-1" class="f_btn">BUY NOW</a>
+                </div>
+            </div>
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book5.jpeg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>TOO EARLY</h2>
+                    <p class="writer">NORA ERICSON</p>
+                    <div class="categories">SCIENCE FICTION</div>
+                    <p class="book_price">$16.50<sub><del>$18.60</del></sub></p>
+                    <a href="https://www.amazon.in/Too-Early-Nora-Ericson-ebook/dp/B09S6GR311/ref=sr_1_6?crid=3KE3GKV93MMIB&dib=eyJ2IjoiMSJ9.DDyCkAd9sZzg4R1MlG_Z-P1iFXRUnmqNhZWxTZegdkopkFIg5wVR0p3TZM9D1VTxryFkEj-MzPZbaRnwHNCTvueK8VB-vB7YerzvENj50kCT697ULYziPVUFx3GVlDe9RF9VUwhfJUVyv7We-wGbzCbalhPE5LvOefTge1z6_eSYrAcqj2D0cdaK6kBQzs6CeZfChdvC3wrbSiEEQtOuOH_1rCfNfCU7KBtHKcO7Drg.l49kT5n-Po_26CkWa3NP1JMx_Eux3DNClZvJ_At0Ngk&dib_tag=se&keywords=TOO+EARLY&qid=1727244154&sprefix=too+early%2Caps%2C215&sr=8-6" class="f_btn">BUY NOW</a>
+                </div>
+
+            </div>
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book6.jpeg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>BOY BOAT</h2>
+                    <p class="writer">SAMANTHA M.CLARK</p>
+                    <div class="categories">SCIENCE FICTION</div>
+                    <p class="book_price">$15.50<sub><del>$18.60</del></sub></p>
+                    <a href="https://www.amazon.in/Boy-Boat-Beast-Samantha-Clark-ebook/dp/B075RSRZCP/ref=sr_1_3?crid=XQUAL0KGZQKH&dib=eyJ2IjoiMSJ9.Rikz9XU0-_t98MgsdmE600c55yWKH5jEDKS7t144sl3wgEVJemE1PTg2-FbYF-YW.mnu4zKbELw233RYXXdVqxs0EnsCAR8Wg62XCdSHfPY4&dib_tag=se&keywords=BOY+BOAT+BEAST+BOOK&qid=1727244261&sprefix=boy+boat+beast+book%2Caps%2C197&sr=8-3" class="f_btn">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

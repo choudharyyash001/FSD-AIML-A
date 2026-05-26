@@ -1,0 +1,47 @@
+.container-fluid{
+    border: 5px solid rgb(160, 78, 78);
+    /* border: none; */
+}
+.row{
+    border: 5px solid green;
+    /* border: none; */
+    
+}
+
+.col,.col-3,.col-9,.col-6,.col-8,.col-2,.col-md-8,.col-md-2,.col-lg-8,.col-lg-2,.col-12,.col-md-6,.col-4,.col-sm-8,.col-md-4,.col-md-3,.col-md-3 offset-md-1,.col-md-12{
+    border: 5px solid rgb(53, 48, 48);
+    /* border: none; */
+}
+
+#header{
+    background-color:brown;
+    
+}
+
+#menu{
+    background-color: pink;
+    
+}
+
+#menu ul li{display: inline;
+padding: 50px;
+}
+#menu ul{list-style: none;}
+#content-li{
+    background-color: pink;
+}
+
+/* body{
+    background-color: grey;
+} */
+#footer{
+    background-color: brown;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.lb{
+    background-color: lightblue;
+}

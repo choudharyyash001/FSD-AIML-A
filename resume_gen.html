@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Personal Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container, .display-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 10px;
+        }
+        .form-container h2, .display-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Personal Information</h2>
+        <form id="infoForm">
+            <label for="fname">First Name:*</label>
+            <input type="text" id="fname" name="fname" required>
+            
+            <label for="lname">Last Name:*</label>
+            <input type="text" id="lname" name="lname" required>
+            
+            <label for="email">Email:*</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:*</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="address">Address:*</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+            
+            <label for="education">Education Qualification:*</label>
+            <input type="text" id="education" name="education" required>
+            
+            <label for="skills">Skills:*</label>
+            <textarea id="skills" name="skills" rows="3" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="display-container" id="displayInfo" style="display: none;">
+        <h2>RESUME PREVIEW</h2>
+        <p><strong>First Name:</strong> <span id="displayFname"></span></p>
+        <p><strong>Last Name:</strong> <span id="displayLname"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Phone Number:</strong> <span id="displayPhone"></span></p>
+        <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+        <p><strong>Education Qualification:</strong> <span id="displayEducation"></span></p>
+        <p><strong>Skills:</strong> <span id="displaySkills"></span></p>
+    </div>
+
+    <script>
+        document.getElementById('infoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            document.getElementById('displayFname').textContent = document.getElementById('fname').value;
+            document.getElementById('displayLname').textContent = document.getElementById('lname').value;
+            document.getElementById('displayEmail').textContent = document.getElementById('email').value;
+            document.getElementById('displayPhone').textContent = document.getElementById('phone').value;
+            document.getElementById('displayAddress').textContent = document.getElementById('address').value;
+            document.getElementById('displayEducation').textContent = document.getElementById('education').value;
+            document.getElementById('displaySkills').textContent = document.getElementById('skills').value;
+            
+            document.getElementById('displayInfo').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART RESUME REVIEWER</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        section { width:100%; min-height:100vh; background-image:url(bg.png); background-size:cover; background-position:center; }
+        nav { width:100%; display:flex; align-items:center; justify-content:space-around; box-shadow:0 0 10px rgb(121,123,197); background:white; position:fixed; z-index:100; left:0; border-radius:30px; padding:10px; }
+        nav li { display:inline-block; padding:0 10px; }
+        nav a { color:black; text-decoration:none; }
+        nav a:hover { color:rgb(154,161,201); }
+        .main { display:flex; align-items:center; justify-content:space-around; position:relative; top:100px; flex-wrap:wrap; }
+        .main h1 { font-size:50px; }
+        .main h1 span { color:#7f75ca; }
+        .main p { max-width:600px; text-align:justify; line-height:1.5; margin:20px 0; }
+        .main_btn { background:#6772b9; padding:10px 20px; color:#fff; text-decoration:none; border-radius:8px; cursor:pointer; }
+        .main_img img { width:100%; max-width:780px; height:auto; }
+        .container { margin-top:20px; text-align:center; }
+        .file-upload { display:inline-block; padding:12px 25px; border:2px dashed #4CAF50; border-radius:10px; color:#4CAF50; font-weight:bold; cursor:pointer; margin-bottom:10px; }
+        .file-upload input[type="file"] { display:none; }
+        button { padding:12px 25px; border-radius:10px; border:none; background-color:#4CAF50; color:white; cursor:pointer; font-size:16px; }
+        button:hover { background-color:#45a049; }
+        #loading { text-align:center; margin-top:20px; display:none; }
+        #loading img { width:100px; display:block; margin:10px auto; }
+        .build_res { color:white; font-size:20px; background-color:orange; text-align:center; height:50px; width:300px; border:1px solid orange; border-radius:8px; margin:20px auto; text-decoration:none; display:flex; align-items:center; justify-content:center; }
+        .faq-section { border:1px solid #ccc; border-radius:10px; padding:20px; margin:30px auto; max-width:900px; background-color:#fff9f0; }
+        .ques_p { padding:8px; text-align:center; font-size:18px; margin-bottom:10px; }
+        footer { background-color:#75afb7; color:white; text-align:center; padding:30px 0; margin-top:20px; }
+        details summary { cursor:pointer; font-weight:bold; }
+        details p { padding:5px 15px; margin:5px 0; }
+    </style>
+    <script>
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <img width="200px" src="resume_img.jpg" alt="Logo" style="cursor:pointer;">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="example.html">Create</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+
+        <div class="main" id="home">
+            <div class="main_tag">
+                <h1>WELCOME TO<br><span>THE Smart RESUME Reviewer</span></h1>
+                <p id="about">
+                    A resume is a document showcasing your background, skills, and accomplishments. Smart Resume Reviewer helps you create professional resumes tailored to your needs.
+                </p>
+
+                <!-- Upload & Review Form -->
+                <div class="container">
+                    <h2>📄 Upload Your Resume</h2>
+                    <form method="POST" enctype="multipart/form-data" class="upload-form" onsubmit="showLoading(); return false;">
+                        <label class="file-upload">
+                            <input type="file" name="resume" accept=".pdf" required>
+                            <span>📁 Select PDF Resume</span>
+                        </label>
+                        <br><br>
+                        <button type="submit">🚀 Upload & Review</button>
+                    </form>
+                    <div id="loading">
+                        <p>⏳ Analyzing your resume...</p>
+                        <img src="resume.gif" alt="Loading...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_img">
+                <img src="RESUME.gif" alt="Resume GIF" height="400px">
+            </div>
+        </div>
+    </section>
+
+    <div>
+        
+
+        <center>
+            <img src="https://cdn.educba.com/academy/wp-content/uploads/2023/12/Resume.png" alt="Resume Example">
+        </center>
+<a class="build_res" href="example.html">BUILD YOUR RESUME <span style="color:blue"><u>for free</u></span></a>
+        <div class="faq-section">
+            <h2 style="text-align:center;">
+                <img src="https://resumebuild.com/wp-content/uploads/2024/05/faq.webp" alt="FAQ Icon" width="75" height="75">
+                Have Questions About Writing A Great Resume?
+            </h2>
+
+            <div class="ques_p">
+                <details>
+                    <summary>What is Resume?</summary>
+                    <p>A resume is a document used to showcase your career background, skills, and accomplishments. Smart Resume Reviewer helps you create professional resumes tailored to your industry.</p>
+                </details>
+            </div>
+
+            <div class="ques_p">
+                <details>
+                    <summary>How to Create a High School Student Resume for My First Job?</summary>
+                    <p>Follow simple steps using Smart Resume Reviewer to make your first job resume. Pre-built templates and examples help structure it effectively.</p>
+                </details>
+            </div>
+
+            <div class="ques_p">
+                <details>
+                    <summary>How to Make a Resume on My Phone?</summary>
+                    <p>Smart Resume Reviewer works on any device. Pick a template, fill in your details, and download your resume quickly and easily.</p>
+                </details>
+            </div>
+
+            <div class="ques_p">
+                <details>
+                    <summary>How Many Pages Should a Resume Be?</summary>
+                    <p>Generally, 1-2 pages. Beginners usually stick to 1 page; experienced candidates can use 2 pages.</p>
+                </details>
+            </div>
+
+            <div class="ques_p">
+                <details>
+                    <summary>Where Can I Make a Resume for Free?</summary>
+                    <p>Use Smart Resume Reviewer to create a professional resume for free. Choose from templates and examples to quickly build a polished resume.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <strong>© 2024 RESUME BUILDER</strong>
+    </footer>
+</body>
+
+</html>
